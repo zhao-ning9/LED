@@ -1,0 +1,6 @@
+--cpu Cortex-M3
+".\objects\hello_world.o"
+--strict --scatter ".\Objects\hello_world.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\hello_world.map" -o .\Objects\hello_world.axf
